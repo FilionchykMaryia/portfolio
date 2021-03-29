@@ -136,8 +136,30 @@
     }
     .box-about{
         padding-top: 64px;
+        justify-content: center;
         &-item{
-            max-width: 45%;
+            max-width: 100%;
+            &:first-child{
+                display: none;
+            } 
+        }
+
+        &__vertical{
+            display: none;
+        }
+    }    
+}
+@media screen and (max-width: $lg){
+    .section-about{
+        padding-bottom: 0px;
+        .title-h2{
+            font-size: 34px;
+        }
+    }
+    .box-about{
+        padding-top: 64px;
+        &-item{
+            max-width: 40%;
         }
         &__back {
             display: none;

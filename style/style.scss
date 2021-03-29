@@ -80,7 +80,7 @@ body{
         font-size: 14px;
     }
 }
-@media screen and (max-width: $md){
+@media screen and (min-width: $xs) and(max-width: $md){
     .wrapper{
         max-width: 768px;
         padding-left: 30px;
@@ -94,7 +94,7 @@ body{
         font-size: 34px;
     }
 }
-@media screen and (max-width: $lg){
+@media screen and (min-width: $md) and(max-width: $lg){
     .wrapper{
         padding-left: 45px;
         padding-right: 45px;

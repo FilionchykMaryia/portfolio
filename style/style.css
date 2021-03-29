@@ -293,9 +293,31 @@
 
   .box-about {
     padding-top: 64px;
+    justify-content: center;
   }
   .box-about-item {
-    max-width: 45%;
+    max-width: 100%;
+  }
+  .box-about-item:first-child {
+    display: none;
+  }
+  .box-about__vertical {
+    display: none;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .section-about {
+    padding-bottom: 0px;
+  }
+  .section-about .title-h2 {
+    font-size: 34px;
+  }
+
+  .box-about {
+    padding-top: 64px;
+  }
+  .box-about-item {
+    max-width: 40%;
   }
   .box-about__back {
     display: none;
@@ -836,7 +858,7 @@ body {
     font-size: 14px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 425px) and (max-width: 768px) {
   .wrapper {
     max-width: 768px;
     padding-left: 30px;
@@ -852,7 +874,7 @@ body {
     font-size: 34px;
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .wrapper {
     padding-left: 45px;
     padding-right: 45px;
