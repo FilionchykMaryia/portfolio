@@ -1,0 +1,104 @@
+.section-services{
+    background-color: $light;
+    padding: 117px;
+    padding-bottom: 56px;
+}
+
+.service{
+    display: grid;
+    grid-template: 1fr 1fr/1fr 1fr 1fr;
+    row-gap: 15px;
+    column-gap: 49px;
+    padding-top: 45px;
+    margin-bottom: 30px;
+    &-item{
+        &:hover{
+            .service__link-text{
+                width: inherit;
+                opacity: 1;
+                padding-right: 9px;
+            }
+        }
+    }
+    &__icon{
+        display: block;
+        width: 50px;
+        height: 50px;
+        background-repeat: no-repeat;
+    }
+    &__design{
+        background-image: url("../img/icon1.png");
+        background-size: 50px 38px;
+    }
+    &__photo{
+        background-image: url('../img/icon2.png');
+        background-size: 58px 45px;
+    }
+    &__web{
+        background-image: url('../img/icon3.png');
+        background-size: 60px 41px;
+    }
+    &__social{
+        background-image: url('../img/icon4.png');
+        background-size: 52px 49px;
+    }
+    &__marketing{
+        background-image: url('../img/icon5.png');
+        background-size: 57px 48px;
+    }
+    &__app{
+        background-image: url('../img/icon6.png');
+        background-size: 57px 53px;
+    }
+    
+    &__text{
+        color:$text;
+        font-size: 14px;
+        line-height: 26.5px;
+        
+     
+    }
+    &__link{
+        color: $dark;
+        font-size: 14px;
+        text-decoration: none;
+        position: relative;
+        // padding: 20px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 60px;
+        &-text{
+            opacity: 0;
+            width: 0;
+            padding-right: 0;
+            transition: 0.4s ease;
+        }
+        &-line{
+            content: "";
+            display: block;
+            width: 25px;
+            height: 1px;
+            background-color: $dark;
+
+        }
+    }
+}
+@media screen and (max-width: $xs){
+    .service{
+        display: flex;
+        flex-direction: column;
+    }
+    .section-services {
+        background-color: #faf9fe;
+        padding: 0px;
+        padding-bottom: 0px;
+        padding-top: 25px;
+    }
+}
+@media screen and (max-width: $md){
+    .section-services {
+        padding: 55px;
+        padding-bottom: 46px;
+    }
+}

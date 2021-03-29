@@ -1,0 +1,44 @@
+.section-form{
+    padding-top: 70px;
+    padding-bottom: 90px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    max-width: 750px;
+    margin: 40px auto;
+    text-align: center;
+    &__input, &__textarea{
+        border: none;
+        border-bottom: 1px solid #e1e1e1;
+        font-size: 14px;
+        padding: 20px;
+        text-align: center;
+        margin-bottom: 2px;
+        margin-top: 5px;
+        transition: 0.3s;
+        &:focus{
+            outline: none;
+            border-bottom: 1px solid $dark;
+        }
+    }
+    &__textarea{
+        padding-bottom: 39px;
+    }
+    .btn{
+        color: #fff;
+        background-color: #22222b;
+        font-size: 16px;
+        text-decoration: none;
+        padding: 20px 0;
+        margin-top: 32px;
+        border: none;
+    }
+}
+@media screen and (max-width: $xs){
+    .section-form {
+        padding-top: 56px;
+        padding-bottom: 0;
+    }
+}

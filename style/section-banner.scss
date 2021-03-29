@@ -1,0 +1,43 @@
+.section-banner{
+    padding-top: 72px;
+    padding-bottom: 113px;
+    background-color: $dark;
+    color: $white;
+    text-align: center;
+    .before-title{
+        font-size: 22px;
+    }
+    .title-h2{
+        font-size: 48px;
+        margin-bottom: 35px;
+    }
+    .btn{
+        color: $dark;
+        background-color: $white;
+        padding: 12px 58px;
+    }
+}
+@media screen and (max-width: $xs){
+    .section-banner{
+        padding-top: 37px;
+        padding-bottom: 56px;
+        .before-title{
+            font-size: 16px;
+        }
+        .title-h2{
+            font-size: 22px;
+            margin-bottom: 32px;
+        }
+    }
+}
+
+@media screen and (max-width: $md){
+    .section-banner {
+        padding-top: 41px;
+        padding-bottom: 76px;
+        .title-h2 {
+            font-size: 36px;
+        }
+    }
+
+}

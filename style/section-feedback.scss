@@ -1,0 +1,68 @@
+.section-feedback{
+    padding-top: 122px;
+    padding-bottom: 100px;
+}
+
+.feedback{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 66px;
+    &-item{
+        flex: 0 0 49%;
+        min-width: 45%;
+    }
+    &-top{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-bottom: 21px;
+    }
+
+    &-thumb{
+        margin-right: 9px;
+    }
+    &-name{
+        &__title{
+            font-size: 22px;
+            margin-top: 14px;
+            margin-bottom: 11px;
+        }
+        &__job{
+            font-size: 12px;
+            color: $text;
+            margin-bottom: 0;
+        }
+    }
+    &-body{
+        font-size: 18px;
+        color: #7f7f82;
+        font-style: italic;
+        padding: 13px 0px 0px 29px;
+        line-height: 1.8;
+        background-image: url(../img/Quote.png);
+        background-repeat: no-repeat;
+        background-position: 28px 27px;
+    }
+}
+@media screen and (max-width: $xs){
+    .section-feedback {
+        padding-top: 43px;
+        padding-bottom: 46px;
+    }
+    .feedback {
+        flex-direction: column;
+        margin-top: 42px;
+        &-name{
+            &__title{
+                font-size: 16px;
+                margin-top: 14px;
+                margin-bottom: 11px;
+            }
+          
+        }
+        &-body{
+        font-size: 14px;
+        }
+    }
+
+}
